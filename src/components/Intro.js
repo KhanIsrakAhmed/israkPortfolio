@@ -227,7 +227,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View CV
+            Resume
             <Icon name="Document" className="button-icon" />
           </a>
         </div>
