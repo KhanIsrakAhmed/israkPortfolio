@@ -73,6 +73,61 @@
   box-shadow: var(--shadow-box);
   max-width: 100%;
   width: 100%;
+  /* Hide any native horizontal scrollbar this card (or the calendar library's
+     own inner wrapper) renders, while still allowing swipe/drag scrolling on
+     narrow screens so a full year never gets clipped. */
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge legacy */
+}
+
+.gh-graph-card::-webkit-scrollbar {
+  display: none;
+  height: 0;
+}
+
+/* The calendar library renders its own scrollable wrapper as a direct child;
+   hide its scrollbar too so no slider ever shows up under the graph. */
+.gh-graph-card > div {
+  overflow-x: auto !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.gh-graph-card > div::-webkit-scrollbar {
+  display: none !important;
+  height: 0 !important;
+}
+
+.gh-year-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.gh-year-btn {
+  background: transparent;
+  border: 1px solid rgba(100, 217, 138, 0.3);
+  color: var(--lightest-slate);
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-family: 'NTR', sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gh-year-btn:hover {
+  border-color: var(--green-bright);
+  color: var(--green-bright);
+}
+
+.gh-year-btn.active {
+  background: rgba(100, 217, 138, 0.15);
+  border-color: var(--green-bright);
+  color: var(--green-bright);
+  font-weight: bold;
 }
 
 /* Ensure the calendar labels are visible against dark background */
@@ -92,4 +147,14 @@
 .gh-footer-link:hover {
   opacity: 0.8;
   text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+  .gh-graph-card {
+    padding: 20px 16px;
+  }
+
+  .gh-year-btn {
+    padding: 5px 12px;
+    font-size: 0.78rem;
+  }
 }

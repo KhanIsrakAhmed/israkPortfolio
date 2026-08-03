@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { GitHubCalendar } from 'react-github-calendar';
 import '../styles/GitHubContributions.css';
 
 const GitHubContributions = () => {
   const [stats, setStats] = useState({ repos: 0, followers: 0 });
+  const [joinYear, setJoinYear] = useState(null);
+  const [selectedYear, setSelectedYear] = useState('last');
   const username = "KhanIsrakAhmed";
 
   useEffect(() => {
@@ -14,9 +16,25 @@ const GitHubContributions = () => {
           repos: data.public_repos || 0,
           followers: data.followers || 0
         });
+        if (data.created_at) {
+          setJoinYear(new Date(data.created_at).getFullYear());
+        }
       })
       .catch(err => console.error("Error fetching stats:", err));
   }, []);
+
+  // Build the list of past full years available for this account, newest first,
+  // so we can offer a "Last year" tab plus one tab per calendar year (like GitHub's
+  // own profile page does below its contribution graph).
+  const years = useMemo(() => {
+    const currentYear = new Date().getFullYear();
+    const startYear = joinYear || currentYear;
+    const list = [];
+    for (let y = currentYear; y >= startYear; y--) {
+      list.push(y);
+    }
+    return list;
+  }, [joinYear]);
 
   // Updated theme to match the vibrant green in your screenshot
   const theme = {
@@ -44,13 +62,37 @@ const GitHubContributions = () => {
           </div>
         </div>
 
+        <div className="gh-year-selector">
+          <button
+            type="button"
+            className={`gh-year-btn${selectedYear === 'last' ? ' active' : ''}`}
+            onClick={() => setSelectedYear('last')}
+          >
+            Last 12 months
+          </button>
+          {years.map((y) => (
+            <button
+              type="button"
+              key={y}
+              className={`gh-year-btn${selectedYear === y ? ' active' : ''}`}
+              onClick={() => setSelectedYear(y)}
+            >
+              {y}
+            </button>
+          ))}
+        </div>
+
         <div className="gh-graph-card">
+          {/* key forces a clean remount when switching years so the calendar
+              re-fetches/re-renders that year's data instead of reusing stale state */}
           <GitHubCalendar
+            key={selectedYear}
             username={username}
+            year={selectedYear}
             theme={theme}
             fontSize={12}
-            blockSize={12}
-            blockMargin={4}
+            blockSize={11}
+            blockMargin={3}
             showWeekdayLabels
           />
         </div>
