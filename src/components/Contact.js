@@ -115,7 +115,7 @@ export default function Contact() {
 
   const [status, setStatus] = useState("idle"); // idle, sending, success, error
 
-  // 1. Go to https://formspree.io and sign up (free) using   
+  // 1. Go to https://formspree.io and sign up (free) using israk.ahmed275@gmail.com
   // 2. Create a new form, then copy the endpoint it gives you (looks like
   //    https://formspree.io/f/xxxxabcd) and paste it below, replacing the placeholder.
   // 3. Formspree will send a one-time confirmation email — click the link in it

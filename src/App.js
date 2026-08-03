@@ -3,6 +3,7 @@ import Intro from "./components/Intro";
 import About from "./components/About";
 import TechStack from "./components/TechStack";
 import Timeline from "./components/Timeline";
+import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Credits from "./components/Credits";
 import NavBar from "./components/NavBar";
@@ -29,6 +30,7 @@ function App() {
         <About />
         <Projects />
         <Timeline />
+        <Education />
         <Experience />
         <TechStack />
         <GitHubContributions />

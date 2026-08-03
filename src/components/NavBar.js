@@ -266,6 +266,9 @@ class NavBar extends React.Component {
                 <Nav.Link href="#timeline" ref={this.addToDesktopNavRefs}>
                   Timeline
                 </Nav.Link>
+                <Nav.Link href="#education" ref={this.addToDesktopNavRefs}>
+                  Education
+                </Nav.Link>
                 <Nav.Link href="#experience" ref={this.addToDesktopNavRefs}>
                   Experience
                 </Nav.Link>
@@ -325,6 +328,13 @@ class NavBar extends React.Component {
                 ref={this.addToMobileNavRefs}
               >
                 Timeline
+              </Nav.Link>
+              <Nav.Link
+                href="#education"
+                onClick={this.toggleMobileMenu}
+                ref={this.addToMobileNavRefs}
+              >
+                Education
               </Nav.Link>
               <Nav.Link
                 href="#experience"
