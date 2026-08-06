@@ -14,7 +14,10 @@ A sleek, high-performance personal website designed with a focus on user experie
 - **Responsive:** Fully optimized for all screen sizes.
 
 ---
+### How to Run 
+
 npm install
-npm start
+npm start or npm run builds
+
 ---
 [Visit my site](https://israk-portfolio.vercel.app/Home)
