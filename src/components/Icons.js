@@ -1,11 +1,11 @@
 import React from 'react';
-import { 
-  FiMail, 
-  FiGithub, 
-  FiLinkedin, 
-  FiUser, 
-  FiMessageSquare, 
-  FiSend, 
+import {
+  FiMail,
+  FiGithub,
+  FiLinkedin,
+  FiUser,
+  FiMessageSquare,
+  FiSend,
   FiCheckCircle
 } from 'react-icons/fi';
 import { FaMediumM } from 'react-icons/fa';
@@ -24,6 +24,8 @@ const Icon = ({ name, className }) => {
       return <FiMail {...iconStyle} />;
     case 'GitHub':
       return <FiGithub {...iconStyle} />;
+    case 'LinkedIn':
+      return <FiLinkedin {...iconStyle} />;
     case 'Linkedin':
       return <FiLinkedin {...iconStyle} />;
     case 'Medium':
