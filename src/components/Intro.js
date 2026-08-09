@@ -215,8 +215,7 @@ const Intro = () => {
         </div>
 
         <div className="intro-desc" ref={descRef}>
-          From building RC cars in highschool to leading UIU Robotics and
-          researching AI, I'm driven by a passion for creating smarter solutions
+          From building RC cars in high school to advancing my expertise in Deep Learning and Robotics, I'm driven by a passion for solving real-world problems
           through Deep Learning and Robotics.
         </div>
 

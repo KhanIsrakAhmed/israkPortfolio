@@ -35,7 +35,7 @@ const milestones = [
   },
   {
     title: "Undergrad Life at UIU",
-    description: "Started CS at United International University after receiving 19 admission offers from USA & Switzerland.",
+    description: "Enrolled in the BSc in Computer Science & Engineering (CSE) program at United International University in Spring 2022.",
     year: "2022",
     type: "education",
   },

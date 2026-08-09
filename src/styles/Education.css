@@ -1,0 +1,108 @@
+#education {
+  min-height: 40vh;
+  margin: 100px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.education-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background-color: var(--box-color);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  border-left: 3px solid var(--green-bright);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-box);
+}
+
+.education-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: var(--drop-shadow);
+}
+
+.education-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.education-institution-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.education-institution {
+  font-family: "NTR", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--lightest-slate);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a.education-institution:hover {
+  color: var(--green-bright);
+}
+
+.education-abbreviation {
+  font-family: "NTR", sans-serif;
+  font-size: 16px;
+  color: var(--green-bright);
+}
+
+.education-degree {
+  font-family: "NTR", sans-serif;
+  font-size: 17px;
+  color: var(--lightest-slate);
+  opacity: 0.9;
+}
+
+.education-duration {
+  font-family: "NTR", sans-serif;
+  font-size: 15px;
+  color: var(--lightest-slate);
+  opacity: 0.6;
+  margin-top: 0.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #education {
+    margin: 60px auto;
+  }
+
+  .education-card {
+    padding: 1.1rem;
+    gap: 0.9rem;
+  }
+
+  .education-icon {
+    font-size: 2rem;
+  }
+
+  .education-institution {
+    font-size: 19px;
+  }
+
+  .education-degree {
+    font-size: 15px;
+  }
+}
