@@ -52,6 +52,16 @@ export default function SideNavBar({ showStars, setShowStars }) {
       </a>
 
       <a
+        href="https://www.linkedin.com/in/khan-israk-ahmed-521a64393"
+        title="LinkedIn"
+        target="_blank"
+        rel="noopener noreferrer"
+        ref={addToRefs}
+      >
+        <Icon name="LinkedIn" className="sidenav-icon" />
+      </a>
+
+      <a
         href="https://orcid.org/0009-0002-2029-8580"
         title="ORCID"
         target="_blank"
