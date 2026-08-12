@@ -50,7 +50,7 @@ const Credits = () => {
           </a>
           <span className="footer-separator"> | </span>
           <a
-            href="-----"
+            href="https://www.linkedin.com/in/khan-israk-ahmed-521a64393"
             target="_blank"
             rel="noopener noreferrer me"
             title="Khan Israk Ahmed on LinkedIn"
