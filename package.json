@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/KhanIsrakAhmed"
   },
-  "version": "2.2.1",
+  "version": "2.7.5",
   "license": "MIT",
   "private": true,
   "dependencies": {
