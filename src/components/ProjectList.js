@@ -7,14 +7,13 @@ const ProjectList = {
       image: "/assets/cholokini.png",
       github: "https://github.com/KhanIsrakAhmed/CholoKini",
       website: "",
-      tags: ["SQL", "MySQL", "Data Analysis"],
+      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Bootstrap"],
       files: [
-
         {
           name: "README.md",
           type: "info",
           content:
-            "A SQL data analysis project exploring global COVID-19 cases, deaths, and vaccinations using MySQL. The project includes data cleaning, exploratory data analysis, infection and mortality rate calculations, continent-wise comparisons, rolling vaccination statistics with window functions, and SQL views for visualization-ready insights.",
+            "CholoKini is an online auction platform that connects buyers and sellers through an interactive bidding experience. Users can discover products, participate in auctions, place competitive bids, communicate with sellers, and complete payments using bKash, Nagad, or cards. The platform also includes product management, search, notifications, and an admin dashboard.",
         },
       ],
     },
