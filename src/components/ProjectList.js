@@ -1,7 +1,23 @@
 import Code from "./codes/code";
 
 const ProjectList = {
-  Software: [
+  "FYDP - Final Year Design Project": [
+    {
+      name: "A Legally-Grounded Evaluation Framework for Retrieval-Augmented Generation Systems in the Context of Bangladeshi Law",
+      image: "/assets/fydp.png",
+      github: "https://github.com/KhanIsrakAhmed/legal-rag-bangladesh",
+      website: "",
+      tags: ["Python", "AI", "RAG", "LLM", "NLP", "Legal AI", "Semantic Search", "Vector Search", "Information Retrieval", "Generative AI"], files: [
+        {
+          name: "README.md",
+          type: "info",
+          content:
+            "This Final Year Design Project develops a verified machine-readable corpus of the English Bangladesh Code, implements multiple legal retrieval pipelines, and introduces LEGAL-RAG-EVAL, a domain-specific evaluation framework designed to measure retrieval quality, answer faithfulness, citation correctness, distractor resistance, and refusal calibration.",
+        },
+      ],
+    },
+  ],
+  "Software": [
     {
       name: "CholoKini",
       image: "/assets/cholokini.png",
@@ -56,7 +72,7 @@ const ProjectList = {
       ],
     },
   ],
-  Research: [
+  "Research": [
     {
       name: "Automated Visual Inspection for Defect Detection",
       image: "/assets/avi-defect-detection.png",
@@ -177,7 +193,7 @@ Version Control:
       ],
     },
   ],
-  Hardware: [
+  "Hardware": [
     {
       name: "Arduino-Based Electronic Voting Machine (EVM)",
       image: `/assets/evm.png`,
