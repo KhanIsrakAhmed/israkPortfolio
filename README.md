@@ -14,5 +14,7 @@ A sleek, high-performance personal website designed with a focus on user experie
 - **Responsive:** Fully optimized for all screen sizes.
 
 ---
+npm install
+npm start
 ---
 [Visit my site](https://israk-portfolio.vercel.app/Home)
