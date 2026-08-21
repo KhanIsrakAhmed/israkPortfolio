@@ -10,7 +10,7 @@
 
 #contact .section-header {
   justify-content: center !important;
-} 
+}
 
 .contact-intro {
   margin-bottom: 24px;
@@ -119,7 +119,7 @@
 
 .contact-actions {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .contact-send-btn {
@@ -217,20 +217,21 @@
 @media (max-width: 768px) {
   #contact .section-header {
     justify-content: center !important;
-  } 
+  }
 
   .contact-intro {
     font-size: 16px;
   }
+
   .contact-container {
     padding: 30px 20px;
     margin: 0 20px;
   }
-  
+
   .contact-actions {
     justify-content: center;
   }
-  
+
   .contact-send-btn {
     justify-content: center;
   }
@@ -244,21 +245,22 @@
   }
 }
 
-@media (max-width: 600px) {  
+@media (max-width: 600px) {
   #contact .section-header {
     justify-content: center !important;
-  } 
+  }
+
   .contact-input,
   .contact-textarea {
     font-size: 14px;
     padding: 14px 20px 14px 45px;
   }
-  
+
   .input-icon {
     font-size: 18px;
     left: 14px;
   }
-  
+
   .contact-send-btn {
     padding: 12px 20px;
     font-size: 15px;
@@ -266,7 +268,7 @@
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px var(--color-hover) inset !important;
