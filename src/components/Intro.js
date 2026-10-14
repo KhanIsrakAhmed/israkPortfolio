@@ -237,6 +237,15 @@ const Intro = () => {
             Resume
             <Icon name="Document" className="button-icon" />
           </a>
+          <a
+            href={`${process.env.PUBLIC_URL}/assets/Israk's CV.pdf`}
+            className="outline-button btn-effect"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CV
+            <Icon name="Document" className="button-icon" />
+          </a>
         </div>
       </div>
 
