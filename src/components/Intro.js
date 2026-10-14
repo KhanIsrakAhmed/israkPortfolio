@@ -163,7 +163,14 @@ const Intro = () => {
             className="text-typing-container"
             style={{ position: "relative" }}
           >
-            <h1 className="intro-title-wrapper" style={{ display: "inline", fontSize: "inherit", fontWeight: "inherit" }}>
+            <h1
+              className="intro-title-wrapper"
+              style={{
+                display: "inline",
+                fontSize: "inherit",
+                fontWeight: "inherit",
+              }}
+            >
               <span className="intro-title" ref={textRef}>
                 Hi there! I'm{" "}
               </span>
@@ -215,13 +222,14 @@ const Intro = () => {
         </div>
 
         <div className="intro-desc" ref={descRef}>
-          From building RC cars in high school to advancing my expertise in Deep Learning and Robotics, I'm driven by a passion for solving real-world problems
-          through Deep Learning and Robotics.
+          From building RC cars in high school to advancing my expertise in Deep
+          Learning and Robotics, I'm driven by a passion for solving real-world
+          problems through Deep Learning and Robotics.
         </div>
 
         <div className="intro-buttons" ref={buttonsRef}>
           <a
-            href={`${process.env.PUBLIC_URL}/assets/My_CV.pdf`}
+            href={`${process.env.PUBLIC_URL}/assets/resume.pdf`}
             className="outline-button btn-effect"
             target="_blank"
             rel="noopener noreferrer"
