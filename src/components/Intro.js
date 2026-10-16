@@ -243,7 +243,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            CV
+            My CV
             <Icon name="Document" className="button-icon" />
           </a>
         </div>
