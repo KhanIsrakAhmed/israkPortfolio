@@ -234,7 +234,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Resume
+            View Resume
             <Icon name="Document" className="button-icon" />
           </a>
           <a
@@ -243,7 +243,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            My CV
+            View My CV
             <Icon name="Document" className="button-icon" />
           </a>
         </div>
