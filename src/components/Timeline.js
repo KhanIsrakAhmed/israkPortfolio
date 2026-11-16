@@ -17,29 +17,32 @@ gsap.registerPlugin(ScrollTrigger);
 const milestones = [
   {
     title: "Early Curiosity",
-    description: "Fascinated by computers and RC cars in Class 8, discovering microcontrollers like Arduino and ESP.",
+    description:
+      "Fascinated by computers and RC cars in Class 8, discovering microcontrollers like Arduino and ESP.",
     year: "2015",
     type: "startup",
   },
   {
     title: "Exploring CS & Design",
-    description: "Explored programming, software engineering, and graphics design during high school.",
+    description:
+      "Explored programming, software engineering, and graphics design during high school.",
     year: "2015 - 2019",
     type: "statistics",
   },
   {
     title: "COVID & Web Dev",
-    description: "Deep dived into Web Development and UI/UX design via Figma during the pandemic.",
+    description:
+      "Deep dived into Web Development and UI/UX design via Figma during the pandemic.",
     year: "2020 - 2021",
     type: "startup",
   },
   {
     title: "Undergrad Life at UIU",
-    description: "Enrolled in the BSc in Computer Science & Engineering (CSE) program at United International University in Spring 2022.",
-    year: "2022",
+    description:
+      "Enrolled in the BSc in Computer Science & Engineering (CSE) program at United International University in Spring 2022.",
+    year: "2022 - 2026",
     type: "education",
   },
-
 ];
 
 export default function Timeline() {
@@ -63,7 +66,7 @@ export default function Timeline() {
             start: "top 90%",
             toggleActions: "restart none none reverse",
           },
-        }
+        },
       );
 
       gsap.fromTo(
@@ -78,7 +81,7 @@ export default function Timeline() {
             end: "bottom 20%",
             scrub: 1,
           },
-        }
+        },
       );
 
       timelineItemsRef.current.forEach((item, index) => {
@@ -105,7 +108,7 @@ export default function Timeline() {
               opacity: 1,
               duration: 0.5,
               ease: "power2.out",
-            }
+            },
           )
           .fromTo(
             dot,
@@ -116,7 +119,7 @@ export default function Timeline() {
               duration: 0.3,
               ease: "back.out(1.7)",
             },
-            "-=0.3"
+            "-=0.3",
           )
           .fromTo(
             date,
@@ -127,7 +130,7 @@ export default function Timeline() {
               duration: 0.3,
               ease: "power2.out",
             },
-            "-=0.2"
+            "-=0.2",
           );
       });
     });
