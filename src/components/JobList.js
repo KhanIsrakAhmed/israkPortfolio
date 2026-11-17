@@ -4,7 +4,7 @@ import React from "react";
 const defaultExperienceItems = {
   "Progeny Technologies Ltd": {
     jobTitle: "Hands-on Trainee, ERP Development @",
-    duration: "MMM YYYY - MMM YYYY", // TODO: fill in your actual dates
+    // duration: "MMM YYYY - MMM YYYY", // TODO: fill in your actual dates
     desc: [
       "Completed hands-on training in ERP development at Progeny Technologies Ltd.",
       // TODO: add 2-3 more bullets (modules worked on, tech stack, what you built)
